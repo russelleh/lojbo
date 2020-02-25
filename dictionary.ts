@@ -1,4 +1,4 @@
-import words from './dictionary.json'
+import * as words from './dictionary.json'
 
 window.onload = (event) => {
   var input = document.getElementsByTagName("input")[0]
