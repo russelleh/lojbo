@@ -24,7 +24,13 @@ window.onload = (event) => {
 
       main.innerHTML = result.reduce((words, word) => {
         const sources = word.sources.sort((source_a, source_b) => {
-          return source_a.language > source_b.language
+          if (source_a.language > source_b.language) {
+            return 1
+          } else if (source_a.language < source_b.language) {
+            return -1
+          } else {
+            return 0
+          }
         }).reduce((sources, source) => {
           return sources +
             "<li class=\"" + source.language + "\">" +
