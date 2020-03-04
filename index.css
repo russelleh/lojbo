@@ -1,0 +1,81 @@
+body {
+  font-family: sans-serif; }
+
+header {
+  margin: 1em; }
+  header a {
+    padding: 0.25em;
+    border: 0.15em solid;
+    border-radius: 0.25em;
+    text-decoration: none; }
+
+.active {
+  color: white;
+  background: #dd3322;
+  border-color: #dd3322; }
+
+.inactive {
+  color: #dd3322; }
+
+main {
+  max-width: 48em;
+  margin: auto;
+  padding-left: 4em;
+  padding-right: 4em;
+  padding-top: 2em;
+  padding-bottom: 2em;
+  line-height: 1.5em; }
+
+h1 {
+  line-height: initial; }
+
+.example {
+  text-align: center; }
+  .example p {
+    display: inline-block;
+    padding-left: 1em;
+    padding-right: 1em; }
+
+em {
+  display: block; }
+
+.at {
+  font-style: initial; }
+
+h3, .x1 {
+  color: #dd3322; }
+
+.x2 {
+  color: #cc5522; }
+
+.x3 {
+  color: #bb7722; }
+
+h1, .su {
+  color: #2280dd; }
+
+.mo {
+  color: #339944; }
+
+.su {
+  font-weight: bold; }
+
+input {
+  padding: 0.5em;
+  border: 0.1em solid;
+  font-size: initial; }
+
+.word h4, .word ul, .word li {
+  display: inline; }
+
+.word h4, .word ul, .word .meaning {
+  padding-top: 1em;
+  padding-bottom: 1em; }
+
+.word li {
+  padding-right: 0.5em;
+  padding-left: 0em; }
+
+.word, input {
+  margin-top: 1em;
+  margin-bottom: 1em; }
