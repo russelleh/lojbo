@@ -1,8 +1,8 @@
 import * as words from './dictionary.json'
 
 window.onload = (event) => {
-  var input = document.getElementsByTagName("input")[0]
-  var main  = document.getElementsByTagName("main")[0]
+  var input       = document.getElementsByTagName("input")[0]
+  var dictionary  = document.getElementById("dictionary")
   input.focus()
   input.onkeyup = (event) => {
     if (input.value.length) {
@@ -22,7 +22,7 @@ window.onload = (event) => {
           sources
       })
 
-      main.innerHTML = result.reduce((words, word) => {
+      dictionary.innerHTML = result.reduce((words, word) => {
         const sources = word.sources.sort((source_a, source_b) => {
           if (source_a.language > source_b.language) {
             return 1
@@ -45,7 +45,7 @@ window.onload = (event) => {
         "</div>"
       }, "")
     } else {
-      main.innerHTML = ""
+      dictionary.innerHTML = ""
     }
   }
 }
