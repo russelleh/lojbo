@@ -1,4 +1,4 @@
-import * as words from './dictionary.json'
+const words = require("./dictionary.json")
 
 window.onload = (event) => {
   var input       = document.getElementsByTagName("input")[0]

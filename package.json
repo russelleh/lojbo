@@ -1,0 +1,10 @@
+{
+  "scripts": {
+    "build": "parcel build index.html --out-dir docs/ --public-url ./"
+  },
+  "devDependencies": {
+    "cssnano": "^4.1.10",
+    "sass": "^1.26.5",
+    "typescript": "^3.8.3"
+  }
+}

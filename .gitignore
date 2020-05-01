@@ -1,3 +1,6 @@
 dictionary.js
 index.css
 dist/
+.cache/
+node_modules/
+package-lock.json
